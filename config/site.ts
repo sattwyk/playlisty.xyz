@@ -1,9 +1,9 @@
 export type SiteConfig = typeof siteConfig
 
 export const siteConfig = {
-  name: "Next.js",
+  name: "Playlisty",
   description:
-    "Beautifully designed components built with Radix UI and Tailwind CSS.",
+    "Playlisty.xyx is a YouTube playlist manager that helps you stay focused and distraction-free.",
   mainNav: [
     {
       title: "Home",
@@ -11,8 +11,7 @@ export const siteConfig = {
     },
   ],
   links: {
-    twitter: "https://twitter.com/shadcn",
-    github: "https://github.com/shadcn/ui",
-    docs: "https://ui.shadcn.com",
+    twitter: "https://twitter.com/sattwyk",
+    github: "https://github.com/sattwyk/playlisty.xyz",
   },
 }
