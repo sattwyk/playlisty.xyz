@@ -25,7 +25,7 @@ export default function IndexPage() {
           rel="noreferrer"
           className={buttonVariants({ size: "lg" })}
         >
-          Twitter
+          Get Started
         </Link>
         <Link
           target="_blank"
