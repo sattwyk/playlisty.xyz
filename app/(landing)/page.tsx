@@ -19,12 +19,7 @@ export default function IndexPage() {
         </p>
       </div>
       <div className="flex gap-4">
-        <Link
-          href={siteConfig.links.twitter}
-          target="_blank"
-          rel="noreferrer"
-          className={buttonVariants({ size: "lg" })}
-        >
+        <Link href="/sign-in" className={buttonVariants({ size: "lg" })}>
           Get Started
         </Link>
         <Link
