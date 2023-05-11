@@ -1,4 +1,5 @@
 import Link from "next/link"
+import { SignedIn, SignedOut } from "@clerk/nextjs"
 
 import { siteConfig } from "@/config/site"
 import { buttonVariants } from "@/components/ui/button"
@@ -19,9 +20,16 @@ export default function IndexPage() {
         </p>
       </div>
       <div className="flex gap-4">
-        <Link href="/sign-in" className={buttonVariants({ size: "lg" })}>
-          Get Started
-        </Link>
+        <SignedIn>
+          <Link href="/playlist" className={buttonVariants({ size: "lg" })}>
+            Go to Playlists
+          </Link>
+        </SignedIn>
+        <SignedOut>
+          <Link href="/sign-in" className={buttonVariants({ size: "lg" })}>
+            Get Started
+          </Link>
+        </SignedOut>
         <Link
           target="_blank"
           rel="noreferrer"
